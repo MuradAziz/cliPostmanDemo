@@ -4,7 +4,7 @@
 		"name": "AuthServis",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "25714867",
-		"_collection_link": "https://test55-7981.postman.co/workspace/forLesson~1d02f648-39eb-43ab-bb3e-bd72663d8f5d/collection/25714867-32dba61a-3fad-46f5-98e1-85a7feba61aa?action=share&source=collection_link&creator=25714867"
+		"_collection_link": "https://test55-7981.postman.co/workspace/1d02f648-39eb-43ab-bb3e-bd72663d8f5d/collection/25714867-32dba61a-3fad-46f5-98e1-85a7feba61aa?action=share&source=collection_link&creator=25714867"
 	},
 	"item": [
 		{
@@ -14,7 +14,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
+							"pm.test(\"Status code is 400\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});"
 						],
@@ -760,6 +760,23 @@
 					"body": "{\r\n    \"message\":\"error\"\r\n}"
 				}
 			]
+		},
+		{
+			"name": "test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/accounts",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"accounts"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
