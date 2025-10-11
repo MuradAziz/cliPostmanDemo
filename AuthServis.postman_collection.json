@@ -1,0 +1,805 @@
+{
+	"info": {
+		"_postman_id": "32dba61a-3fad-46f5-98e1-85a7feba61aa",
+		"name": "AuthServis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25714867",
+		"_collection_link": "https://test55-7981.postman.co/workspace/forLesson~1d02f648-39eb-43ab-bb3e-bd72663d8f5d/collection/25714867-32dba61a-3fad-46f5-98e1-85a7feba61aa?action=share&source=collection_link&creator=25714867"
+	},
+	"item": [
+		{
+			"name": "accounts",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/accounts",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"accounts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "accounts",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/accounts",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"accounts"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "{\r\n\"content\": [\r\n{\r\n\"name\": \"Test mmc\",\r\n\"customName\": null,\r\n\"accountBranch\": {\r\n\"branchNumber\": \"123456\",\r\n\"branchName\": \"MUSHTERI XIDMETLERI\"\r\n},\r\n\"blockedAmount\": 21,\r\n\"currentBalance\": null,\r\n\"availableBalance\": null,\r\n\"accountStatus\": null,\r\n\"bankCode\": \"123456\",\r\n\"currency\": \"AZN\",\r\n\"accountNumber\": \"4169738812345678\"\r\n},\r\n{\r\n\"name\": \"Test2 mmc\",\r\n\"customName\": null,\r\n\"accountBranch\": {\r\n\"branchNumber\": \"741852\",\r\n\"branchName\": \"MUSHTERI XIDMETLERI\"\r\n},\r\n\"blockedAmount\": 21,\r\n\"currentBalance\": null,\r\n\"availableBalance\": null,\r\n\"accountStatus\": null,\r\n\"bankCode\": \"123456\",\r\n\"currency\": \"AZN\",\r\n\"accountNumber\": \"4098584485857474\"\r\n}\r\n]\r\n}"
+				},
+				{
+					"name": "succes",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/accounts",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"accounts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 10 Sep 2025 08:13:49 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "x-srv-trace",
+							"value": "v=1;t=faa8ff6fbcf880c2"
+						},
+						{
+							"key": "x-srv-span",
+							"value": "v=1;s=5ff1d7c7b2116a83"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "x-ratelimit-limit",
+							"value": "120"
+						},
+						{
+							"key": "x-ratelimit-remaining",
+							"value": "119"
+						},
+						{
+							"key": "x-ratelimit-reset",
+							"value": "1757492089"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"28b-Qun80HXRTz0azrgc6k6VSy6QHE0\""
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-envoy-upstream-service-time",
+							"value": "447"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=txPNwBcJTb2jGG09HWKvfX9c6BY.0pOcv25LKm91xhc-1757492029-1.0.1.1-X6RzbAf.JdFW_AAPKOFqEg3nWAVyOXD6Ud4mgzWSCDv9HdkW5gLKeyng6n2hW6P98SQD_LaijZ3JQB2KsyrnJRhqhgXdDF4Z.n.7F1P11ds; path=/; expires=Wed, 10-Sep-25 08:43:49 GMT; domain=.pstmn.io; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "97cd77dd68b155e7-FRA"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"content\": [\n        {\n            \"name\": \"Test mmc\",\n            \"customName\": null,\n            \"accountBranch\": {\n                \"branchNumber\": \"123456\",\n                \"branchName\": \"MUSHTERI XIDMETLERI\"\n            },\n            \"blockedAmount\": 21,\n            \"currentBalance\": null,\n            \"availableBalance\": null,\n            \"accountStatus\": null,\n            \"bankCode\": \"123456\",\n            \"currency\": \"AZN\",\n            \"accountNumber\": \"4169738812345678\"\n        },\n        {\n            \"name\": \"Test2 mmc\",\n            \"customName\": null,\n            \"accountBranch\": {\n                \"branchNumber\": \"741852\",\n                \"branchName\": \"MUSHTERI XIDMETLERI\"\n            },\n            \"blockedAmount\": 21,\n            \"currentBalance\": null,\n            \"availableBalance\": null,\n            \"accountStatus\": null,\n            \"bankCode\": \"123456\",\n            \"currency\": \"AZN\",\n            \"accountNumber\": \"4098584485857474\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "cards",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"console.log(\"Cavab:\", pm.response.json());"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/cards",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"cards"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/cards",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cards"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": \"QA tester\",\n    \"cardNumber\": \"9874563211236547\"\n}\n"
+				}
+			]
+		},
+		{
+			"name": "v1/gpp/pay",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Construct request body dynamically\r",
+							"const requestBody = {\r",
+							"    user: \"Murad\",\r",
+							"    accountNumber: pm.environment.get(\"muradAccount\"),\r",
+							"    amount: \"123\",\r",
+							"    currency: \"azn\"\r",
+							"};\r",
+							"\r",
+							"// Set the request body in JSON format\r",
+							"pm.request.body.raw = JSON.stringify(requestBody);\r",
+							"pm.collectionVariables.set(\"body\", requestBody)"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{newToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{{request}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/v1/gpp/pay",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v1",
+						"gpp",
+						"pay"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "v1/gpp/pay",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n“user”: \"Murad\"\n\"accountNumber”: “9874563211236547”\n“amount”: \"123\"\n“currency”: “azn”\n}"
+						},
+						"url": {
+							"raw": "{{url}}/v1/gpp/pay",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"gpp",
+								"pay"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "{\r\n\"transactionId\": \"{{$randomPassword}}\",\r\n\"fullName\":{{$randomFullName}},\r\n\"email\":{{$randomEmail}},\r\n\"phoneNumber\":{{$randomPhoneNumber}},\r\n\"amount\":{{$randomInt}},\r\n\"currency\": \"USD\"\r\n}\r\n"
+				},
+				{
+					"name": "v1/gpp/pay Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n“user”: \"Murad\"\n\"accountNumber”: “9874563211236547”\n“amount”: \"123\"\n“currency”: “azn”\n}"
+						},
+						"url": {
+							"raw": "{{url}}/v1/gpp/pay",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"gpp",
+								"pay"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "{\r\n\"transactionId\": \"{{$randomPassword}}\",\r\n\"fullName\":{{$randomFullName}},\r\n\"email\":{{$randomEmail}},\r\n\"phoneNumber\":{{$randomPhoneNumber}},\r\n\"amount\":{{$randomInt}},\r\n\"currency\": \"USD\"\r\n}\r\n"
+				}
+			]
+		},
+		{
+			"name": "get account",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"name\": \"Test mmc\",\n            \"customName\": null,\n            \"accountBranch\": {\n                \"branchNumber\": \"123456\",\n                \"branchName\": \"MUSHTERI XIDMETLERI\"\n            },\n            \"blockedAmount\": 21,\n            \"currentBalance\": null,\n            \"availableBalance\": null,\n            \"accountStatus\": null,\n            \"bankCode\": \"123456\",\n            \"currency\": \"AZN\",\n            \"accountNumber\": \"4169738812345678\"\n        }"
+				},
+				"url": {
+					"raw": "{{url}}/v1/gpp/pay/accountNumber=4169738812345678",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v1",
+						"gpp",
+						"pay",
+						"accountNumber=4169738812345678"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "test",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/v1/gpp/pay/accountNumber=4169738812345678",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"gpp",
+								"pay",
+								"accountNumber=4169738812345678"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "{\n    \"name\": \"Test mmc\",\n    \"customName\": null,\n    \"accountBranch\": {\n        \"branchNumber\": \"123456\",\n        \"branchName\": \"MUSHTERI XIDMETLERI\"\n    },\n    \"blockedAmount\": 21,\n    \"currentBalance\": null,\n    \"availableBalance\": null,\n    \"accountStatus\": null,\n    \"bankCode\": \"123456\",\n    \"currency\": \"AZN\",\n    \"accountNumber\": \"4169738812345678\"\n}"
+				}
+			]
+		},
+		{
+			"name": "v1/gpp/pay/status",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n“user”: “QA tester”\n\"accountNumber”: “9874563211236547”\n“amount”: 50\n“currency”: “azn”\n\n“transactionId”: “qwerty123456789”\n}\n"
+				},
+				"url": {
+					"raw": "{{url}}/v1/gpp/pay/status",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v1",
+						"gpp",
+						"pay",
+						"status"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n“user”: “QA tester”\n\"accountNumber”: “9874563211236547”\n“amount”: 50\n“currency”: “azn”\n\n“transactionId”: “qwerty123456789”\n}\n"
+						},
+						"url": {
+							"raw": "{{url}}/v1/gpp/pay/status",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"gpp",
+								"pay",
+								"status"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\"Status\" : \"Success\"}"
+				}
+			]
+		},
+		{
+			"name": "reject",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n“user”: “QA tester”\n\"accountNumber”: “9874563211236547”\n“amount”: 50\n“currency”: “azn”\n\"operations\": \"reject\",\n“transactionId”: “qwerty123456789”\n}\n"
+				},
+				"url": {
+					"raw": "{{url}}/v1/gpp/pay/reject",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v1",
+						"gpp",
+						"pay",
+						"reject"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "reject",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n“user”: “QA tester”\n\"accountNumber”: “9874563211236547”\n“amount”: 50\n“currency”: “azn”\n\"operations\": \"reject\",\n“transactionId”: “qwerty123456789”\n}\n"
+						},
+						"url": {
+							"raw": "{{url}}/v1/gpp/pay/reject",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"gpp",
+								"pay",
+								"reject"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\r\n  \"status\": \"rejected\"\r\n}"
+				}
+			]
+		},
+		{
+			"name": "checking response",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/actions/592f11060f95a3d3d46a987a",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"actions",
+						"592f11060f95a3d3d46a987a"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "checking response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/actions/592f11060f95a3d3d46a987a",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"actions",
+								"592f11060f95a3d3d46a987a"
+							]
+						}
+					},
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "\r\nvar response=pm.response.json();\r\nvar schema={\r\n    \"type\": \"object\",\r\n    \"properties\":{\r\n    \"id\":{\"type\":\"string\"}\r\n}\r\n}\r\npm.test(\"shcema validation\", function(){\r\n    pm.response.to.have.jsonSchema(schema)\r\n})\r\npm.test(\"ID düzgün gəlməlidir\", function () {\r\n    pm.expect(jsonData.id).to.eql(Number(expectedId));\r\n});"
+				}
+			]
+		},
+		{
+			"name": "Error case",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/actions/592f11060f95a3d3d46a987",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"actions",
+						"592f11060f95a3d3d46a987"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": []
+					},
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\r\n    \"message\":\"error\"\r\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://40db650f-fb77-4ad9-8f2b-4cb0e6711bfa.mock.pstmn.io"
+		},
+		{
+			"key": "newToken",
+			"value": ""
+		},
+		{
+			"key": "account",
+			"value": ""
+		},
+		{
+			"key": "body",
+			"value": ""
+		}
+	]
+}
