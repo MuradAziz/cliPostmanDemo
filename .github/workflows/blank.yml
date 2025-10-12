@@ -15,3 +15,16 @@ jobs:
       - name: Run API tests
         run: |
           postman collection run "25714867-32dba61a-3fad-46f5-98e1-85a7feba61aa" -e "25714867-6223feed-33e8-44a0-b6c6-c7db9ebc01e4"
+
+      - name: Send Email Report
+        if: always()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ murad.aziz1994@gmail.com }}
+          password: ${{ Baki123! }}
+          subject: "Postman Test Report - ${{ job.status }}"
+          body: "The Postman tests finished with status: ${{ job.status }}"
+          to: "azizmurad0341@gmail.com"
+          from: "murad.qa@gmail.com"
