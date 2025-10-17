@@ -26,5 +26,5 @@ jobs:
           password: $ {{secrets.PASSWORD }}
           subject: "Postman Test Report - ${{ job.status }}"
           body: "The Postman tests finished with status: ${{ job.status }}"
-          to: "azizmurad0341@gmail.com" 
+          to: "azizmurad0341@gmail.com"
           from: "muradaziz1994@gmail.com"
